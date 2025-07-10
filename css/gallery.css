@@ -1,0 +1,30 @@
+/* Masonry-style grid for spring.html */
+.masonry-grid {
+  column-count: 3;
+  column-gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.masonry-grid a {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.masonry-grid a:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.masonry-grid img,
+.masonry-grid video {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
