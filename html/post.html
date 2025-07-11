@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>投稿詳細</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/posts.css" />
+</head>
+<body>
+  <header>
+    <h1>投稿詳細</h1>
+  </header>
+  <main>
+    <section class="post-photo">
+      <img id="photo" src="" alt="">
+      <div class="caption">
+        <p id="caption"></p>
+      </div>
+    </section>
+  </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    const photo = document.getElementById('photo');
+    const caption = document.getElementById('caption');
+
+    const photos = {
+      1: { src: "../img/S__5193832_0.jpg", text: "写真1のキャプション" },
+      2: { src: "../img/S__5193834_0.jpg", text: "写真2のキャプション" },
+      3: { src: "../img/S__5193835_0.jpg", text: "写真3のキャプション" },
+      4: { src: "../img/S__5193836_0.jpg", text: "写真4のキャプション" },
+      5: { src: "../img/S__5193837_0.jpg", text: "写真5のキャプション" },
+      6: { src: "../img/S__5193838_0.jpg", text: "写真6のキャプション" },
+      7: { src: "../img/S__5218370_0.jpg", text: "写真7のキャプション" },
+      8: { src: "../img/S__5218372_0.jpg", text: "写真8のキャプション" },
+      9: { src: "../img/S__5218373_0.jpg", text: "写真9のキャプション" },
+      10: { src: "../img/S__5218374_0.jpg", text: "写真10のキャプション" },
+      11: { src: "../img/S__5218384_0.jpg", text: "写真11のキャプション" },
+      12: { src: "../img/S__5218375_0.jpg", text: "写真12のキャプション" },
+      13: { src: "../img/S__5218377_0.jpg", text: "写真13のキャプション" },
+      14: { src: "../img/S__5218378_0.jpg", text: "写真14のキャプション" },
+      15: { src: "../img/S__5218379_0.jpg", text: "写真15のキャプション" },
+      16: { src: "../img/S__5218380_0.jpg", text: "写真16のキャプション" },
+      17: { src: "../img/S__5218383_0.jpg", text: "写真17のキャプション" },
+      18: { src: "../img/S__5218376_0.jpg", text: "写真18のキャプション" },
+      19: { src: "../img/S__5218385_0.jpg", text: "写真19のキャプション" },
+      20: { src: "../img/S__5218386_0.jpg", text: "写真20のキャプション" }
+    };
+
+    if (photos[id]) {
+      photo.src = photos[id].src;
+      photo.alt = `Photo ${id}`;
+      caption.textContent = photos[id].text;
+    } else {
+      photo.src = "../img/default.jpg";
+      caption.textContent = "写真が見つかりませんでした。";
+    }
+  </script>
+</body>
+</html>
