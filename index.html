@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>青山学院大学体育会男子ラクロス部 公式サイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+  />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'bnt6mgd',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+  </script>
+</head>
+<body>
+
+  <!-- サイト全体のヘッダー -->
+  <header>
+    <div class="header-container">
+      <div class="site-logo">
+        <a href="/">
+          <img src="img/logo.png" alt="青山学院大学体育会男子ラクロス部 ロゴ" />
+        </a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#players">MEMBER</a></li>
+          <li><a href="#schedule">GAME</a></li>
+          <li><a href="#forfreshman">FOR-FRESHMAN</a></li>
+          <li class="contact-pc">
+            <a href="nothing" class="btn-liquid">
+              <span class="inner">CONTACT</span>
+            </a>
+          </li>
+          <li class="contact-mobile">
+            <a href="nothing">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- オーバーレイ背景 -->
+  <div class="overlay"></div>
+
+  <!-- メインビジュアル -->
+  <section id="hero">
+    <h2 class="visually-hidden">メインビジュアル</h2>
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <img src="img/aallboxmember.png" alt="ALL BOX MEMBER">
+      </div>
+    </div>
+  </section>
+
+  <!-- スローガン -->
+  <section id="slogan">
+    <h2>チームスローガン</h2>
+    <p>ALL BOX MEMBER - チーム理念を一発で伝えるキャッチコピー</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About</h2>
+    <p>青学ラクロス部の紹介テキスト</p>
+  </section>
+
+  <!-- 最新情報・お知らせ -->
+  <section id="news">
+    <h2>最新情報・お知らせ</h2>
+    <ul>
+      <li>ニュース項目1</li>
+      <li>ニュース項目2</li>
+    </ul>
+  </section>
+
+  <!-- ブログ更新 -->
+  <section id="blog">
+    <h2>ブログ更新</h2>
+    <ul>
+      <li>記事タイトル1</li>
+      <li>記事タイトル2</li>
+    </ul>
+  </section>
+
+  <!-- 特別告知（キックオフミーティング、リーグ戦ブロック決定） -->
+  <section id="announcements">
+    <h2>特別告知</h2>
+    <p>キックオフミーティングのお知らせなど</p>
+  </section>
+
+  <!-- OB・保護者・サポーター向け導線 -->
+  <section id="support">
+    <h2>OB・保護者・サポーターの皆様へ</h2>
+    <p>専用ページへのリンクなど</p>
+  </section>
+
+  <!--
+  <section id="videos" class="gallery-section">
+    <h2 class="section-title">ギャラリー</h2>
+    <div class="video-grid">
+      <a class="video-link" href="html/spring.html">春</a>
+      <a class="video-link" href="html/summer.html">夏</a>
+      <a class="video-link" href="html/autumn.html">秋</a>
+      <a class="video-link" href="html/winter.html">冬</a>
+    </div>
+  </section>
+  -->
+  
+  <!-- 選手紹介 -->
+  <section id="players">
+    <h2>選手紹介</h2>
+    <div class="player-grid">
+
+      <div class="player-card" data-player-id="player1">
+        <img src="img/flower.png" alt="選手Aの写真" />
+      </div>
+
+      <div class="player-card" data-player-id="player2">
+        <img src="img/flower.png" alt="選手Bの写真" />
+      </div>
+
+      <div class="player-card" data-player-id="player3">
+        <img src="img/flower.png" alt="選手Cの写真" />
+      </div>
+
+      <div class="player-card" data-player-id="player4">
+        <img src="img/flower.png" alt="選手Dの写真" />
+      </div>
+
+    </div>
+
+    <!-- モーダル -->
+    <div id="player-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="modal-player-details">
+          <h3 id="modal-player-name"></h3>
+          <p id="modal-player-comment"></p>
+          <div id="modal-player-extra"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 試合予定・結果 -->
+  <section id="schedule">
+    <h2>試合予定・結果</h2>
+    <ul>
+      <li>〇月×日 VS 対戦校 - 勝敗</li>
+    </ul>
+  </section>
+
+  <!-- ボランティア活動 -->
+  <section id="volunteer">
+    <h2>ボランティア活動</h2>
+    <p>活動内容や写真など</p>
+  </section>
+
+  <!-- スポンサー・支援者 -->
+  <section id="sponsors">
+    <h2>スポンサー・支援者</h2>
+    <ul>
+      <li>スポンサーA</li>
+      <li>スポンサーB</li>
+    </ul>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 青山学院大学体育会男子ラクロス部 All Rights Reserved.</p>
+  </footer>
+<script src="js/script.js"></script>
+<script src="js/liquid.js"></script>
+</body>
+</html>
